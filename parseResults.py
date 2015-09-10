@@ -15,7 +15,7 @@ for filename in glob.glob(os.path.join(path, '*.csv')):
 	f = open(filename, 'r')
 	lines = f.readlines()
 	print >> tsv, filename + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-	for item in lines[1279:1289]:
+	for item in lines[1279:1290]:
 		print >> tsv, item.strip('\n')
 	f.close
 tsv.close
